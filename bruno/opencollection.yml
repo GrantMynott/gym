@@ -1,0 +1,10 @@
+opencollection: 1.0.0
+
+info:
+  name: gym
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
