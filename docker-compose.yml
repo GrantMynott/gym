@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: cgr.dev/chainguard/postgres:latest
+    environment:
+      POSTGRES_DB: gym
+      POSTGRES_USER: gymuser
+      POSTGRES_PASSWORD: gympass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
